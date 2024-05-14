@@ -69,7 +69,7 @@ func printResponseContent(msg *sse.Event, completeContent *strings.Builder) {
   if len(msg.Data) > 6 {
     if err := json.Unmarshal(msg.Data, &responseData); err == nil {
       for _, choice := range responseData.Choices {
-        hlog.Info("content:", choice.Delta.Content)
+        //hlog.Info("content:", choice.Delta.Content)
         completeContent.WriteString(choice.Delta.Content)
       }
     } else {

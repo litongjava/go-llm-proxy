@@ -1,5 +1,5 @@
 # Use the offical Golang image to build the app: https://hub.docker.com/_/golang
-FROM golang:1.22.1 as builder
+FROM litongjava/hertz:0.9.0-golang1.22.1 as builder
 
 # Copy code to the image
 WORKDIR /
