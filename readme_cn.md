@@ -41,6 +41,32 @@ curl --location --request POST 'http://127.0.0.1:8888/openai/v1/chat/completions
     "stream": true
 }'
 ```
+response
+```shell
+data:{"id":"chatcmpl-9P3fvvyk4IuCprCnvMytoKN8UtskC","object":"chat.completion.chunk","created":1715759355,"model":"gpt-3.5-turbo-0125","system_fingerprint":null,"choices":[{"index":0,"delta":{"role":"assistant","content":""},"logprobs":null,"finish_reason":null}]}
+
+data:{"id":"chatcmpl-9P3fvvyk4IuCprCnvMytoKN8UtskC","object":"chat.completion.chunk","created":1715759355,"model":"gpt-3.5-turbo-0125","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"Hi"},"logprobs":null,"finish_reason":null}]}
+
+data:{"id":"chatcmpl-9P3fvvyk4IuCprCnvMytoKN8UtskC","object":"chat.completion.chunk","created":1715759355,"model":"gpt-3.5-turbo-0125","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"!"},"logprobs":null,"finish_reason":null}]}
+
+data:{"id":"chatcmpl-9P3fvvyk4IuCprCnvMytoKN8UtskC","object":"chat.completion.chunk","created":1715759355,"model":"gpt-3.5-turbo-0125","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" How"},"logprobs":null,"finish_reason":null}]}
+
+data:{"id":"chatcmpl-9P3fvvyk4IuCprCnvMytoKN8UtskC","object":"chat.completion.chunk","created":1715759355,"model":"gpt-3.5-turbo-0125","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" can"},"logprobs":null,"finish_reason":null}]}
+
+data:{"id":"chatcmpl-9P3fvvyk4IuCprCnvMytoKN8UtskC","object":"chat.completion.chunk","created":1715759355,"model":"gpt-3.5-turbo-0125","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" I"},"logprobs":null,"finish_reason":null}]}
+
+data:{"id":"chatcmpl-9P3fvvyk4IuCprCnvMytoKN8UtskC","object":"chat.completion.chunk","created":1715759355,"model":"gpt-3.5-turbo-0125","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" assist"},"logprobs":null,"finish_reason":null}]}
+
+data:{"id":"chatcmpl-9P3fvvyk4IuCprCnvMytoKN8UtskC","object":"chat.completion.chunk","created":1715759355,"model":"gpt-3.5-turbo-0125","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" you"},"logprobs":null,"finish_reason":null}]}
+
+data:{"id":"chatcmpl-9P3fvvyk4IuCprCnvMytoKN8UtskC","object":"chat.completion.chunk","created":1715759355,"model":"gpt-3.5-turbo-0125","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" today"},"logprobs":null,"finish_reason":null}]}
+
+data:{"id":"chatcmpl-9P3fvvyk4IuCprCnvMytoKN8UtskC","object":"chat.completion.chunk","created":1715759355,"model":"gpt-3.5-turbo-0125","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"?"},"logprobs":null,"finish_reason":null}]}
+
+data:{"id":"chatcmpl-9P3fvvyk4IuCprCnvMytoKN8UtskC","object":"chat.completion.chunk","created":1715759355,"model":"gpt-3.5-turbo-0125","system_fingerprint":null,"choices":[{"index":0,"delta":{},"logprobs":null,"finish_reason":"stop"}]}
+
+data:[DONE]
+```
 
 ## Available Models
 
