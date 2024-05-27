@@ -3,6 +3,8 @@ FROM litongjava/hertz:0.9.0-golang1.22.1 as builder
 
 # Copy code to the image
 WORKDIR /
+COPY go.mod go.sum ./
+RUN go mod download
 COPY . .
 
 # Build the app

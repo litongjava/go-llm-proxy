@@ -7,7 +7,11 @@ import (
 
 func main() {
   h := server.Default()
-  h.POST("/openai/v1/chat/completions", handlers.OpenaiV1ChatCompletions)
+  h.GET("/", handlers.PingCompletions)
+  h.GET("/ping", handlers.PingCompletions)
+  h.POST("/test", handlers.Test)
   h.POST("/v1/chat/completions", handlers.OpenaiV1ChatCompletions)
+  h.POST("/openai/v1/chat/completions", handlers.OpenaiV1ChatCompletions)
+
   h.Spin()
 }
