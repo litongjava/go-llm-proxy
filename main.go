@@ -8,5 +8,6 @@ import (
 func main() {
   h := server.Default()
   h.POST("/openai/v1/chat/completions", handlers.OpenaiV1ChatCompletions)
+  h.POST("/v1/chat/completions", handlers.OpenaiV1ChatCompletions)
   h.Spin()
 }
